@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="502e26d7-0c4a-4100-81ad-a591187de067" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Idle.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Idle.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Jump.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Jump.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Run.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Run.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@RunBackwards.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@RunBackwards.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Sprint.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Sprint.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Idles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Basic Motions - Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Basic Motions - Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Materials/BasicMotionsFloor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Materials/BasicMotionsFloor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Materials/BasicMotionsMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Materials/BasicMotionsMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Textures/BasicMotionsTexture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions/Textures/BasicMotionsTexture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WFR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WFR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PatScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +68,7 @@
       <updated>1649073343891</updated>
       <workItem from="1649073346124" duration="65000" />
       <workItem from="1649150617915" duration="13000" />
+      <workItem from="1650276401931" duration="5565000" />
     </task>
     <servers />
   </component>

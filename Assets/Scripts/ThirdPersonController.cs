@@ -80,6 +80,7 @@ namespace StarterAssets
 		private int _animIDGrounded;
 		private int _animIDJump;
 		private int _animIDFreeFall;
+		private int _animIDCrawlReady;
 		private int _animIDMotionSpeed;
 
 		private Animator _animator;
@@ -133,6 +134,7 @@ namespace StarterAssets
 			_animIDGrounded = Animator.StringToHash("Grounded");
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
+			_animIDCrawlReady = Animator.StringToHash("CrawlReady");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		}
 
@@ -239,6 +241,15 @@ namespace StarterAssets
 				{
 					_animator.SetBool(_animIDJump, false);
 					_animator.SetBool(_animIDFreeFall, false);
+
+					if (_input.crawl)
+					{
+						_animator.SetBool(_animIDCrawlReady, true);
+					}
+					else
+					{
+						_animator.SetBool(_animIDCrawlReady, false);
+					}
 				}
 
 				// stop our velocity dropping infinitely when grounded
@@ -257,6 +268,7 @@ namespace StarterAssets
 					if (_hasAnimator)
 					{
 						_animator.SetBool(_animIDJump, true);
+						_animator.SetBool(_animIDCrawlReady, false);
 					}
 				}
 
@@ -282,6 +294,8 @@ namespace StarterAssets
 					if (_hasAnimator)
 					{
 						_animator.SetBool(_animIDFreeFall, true);
+						_animator.SetBool(_animIDCrawlReady, false);
+
 					}
 				}
 
