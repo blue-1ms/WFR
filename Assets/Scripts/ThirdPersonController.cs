@@ -121,6 +121,8 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+
+			
 		}
 
 		private void LateUpdate()
@@ -245,10 +247,12 @@ namespace StarterAssets
 					if (_input.crawl)
 					{
 						_animator.SetBool(_animIDCrawlReady, true);
+						_controller.height = 0.9f;
 					}
 					else
 					{
 						_animator.SetBool(_animIDCrawlReady, false);
+						_controller.height = 1.8f;
 					}
 				}
 
@@ -269,6 +273,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDJump, true);
 						_animator.SetBool(_animIDCrawlReady, false);
+						_controller.height = 1.8f;
 					}
 				}
 
@@ -295,6 +300,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDFreeFall, true);
 						_animator.SetBool(_animIDCrawlReady, false);
+						_controller.height = 1.8f;
 
 					}
 				}
