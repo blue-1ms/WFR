@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: b620892c34ec33a4f9caeb760d5975d4
+timeCreated: 1456738768
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Crowd001
+    100002: Crowd002
+    100004: Dummy001
+    100006: Dummy002
+    100008: Dummy003
+    100010: Dummy004
+    100012: Dummy005
+    100014: Dummy006
+    100016: Dummy007
+    100018: Dummy008
+    100020: Gun00
+    100022: Gun01
+    100024: Gun02
+    100026: Gun03
+    100028: Gun04
+    100030: Gun05
+    100032: Gun06
+    100034: jointXL
+    100036: jointXR
+    100038: Kiel
+    100040: SpaceFighter
+    100042: //RootNode
+    100044: SteeringEngineL
+    100046: SteeringEngineR
+    100048: WingL
+    100050: WingR
+    400000: Crowd001
+    400002: Crowd002
+    400004: Dummy001
+    400006: Dummy002
+    400008: Dummy003
+    400010: Dummy004
+    400012: Dummy005
+    400014: Dummy006
+    400016: Dummy007
+    400018: Dummy008
+    400020: Gun00
+    400022: Gun01
+    400024: Gun02
+    400026: Gun03
+    400028: Gun04
+    400030: Gun05
+    400032: Gun06
+    400034: jointXL
+    400036: jointXR
+    400038: Kiel
+    400040: SpaceFighter
+    400042: //RootNode
+    400044: SteeringEngineL
+    400046: SteeringEngineR
+    400048: WingL
+    400050: WingR
+    2300000: Gun00
+    2300002: Gun01
+    2300004: Gun02
+    2300006: Gun03
+    2300008: Gun04
+    2300010: Gun05
+    2300012: Gun06
+    2300014: jointXL
+    2300016: jointXR
+    2300018: Kiel
+    2300020: SpaceFighter
+    2300022: SteeringEngineL
+    2300024: SteeringEngineR
+    2300026: WingL
+    2300028: WingR
+    3300000: Gun00
+    3300002: Gun01
+    3300004: Gun02
+    3300006: Gun03
+    3300008: Gun04
+    3300010: Gun05
+    3300012: Gun06
+    3300014: jointXL
+    3300016: jointXR
+    3300018: Kiel
+    3300020: SpaceFighter
+    3300022: SteeringEngineL
+    3300024: SteeringEngineR
+    3300026: WingL
+    3300028: WingR
+    4300000: SpaceFighter
+    4300002: Kiel
+    4300004: Gun00
+    4300006: jointXR
+    4300008: jointXL
+    4300010: WingR
+    4300012: SteeringEngineL
+    4300014: WingL
+    4300016: SteeringEngineR
+    4300018: Gun01
+    4300020: Gun02
+    4300022: Gun03
+    4300024: Gun04
+    4300026: Gun05
+    4300028: Gun06
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
