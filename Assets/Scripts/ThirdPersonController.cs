@@ -69,7 +69,17 @@ namespace StarterAssets
 		private float _targetRotation = 0.0f;
 		private float _rotationVelocity;
 		private float _verticalVelocity;
+		private float _xVelocity;
+		private float _zVelocity;
 		private float _terminalVelocity = 53.0f;
+		private Vector3 _pushVector = Vector3.zero;
+		private float _pushForce = 0.0f;
+		
+		//Wall push declarations
+		public bool _wallPush;
+		public LayerMask _pushLayers;
+		private Vector3 _pushDir = Vector3.zero;
+		private bool _flag = false;
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
@@ -119,10 +129,12 @@ namespace StarterAssets
 			_hasAnimator = TryGetComponent(out _animator);
 			
 			JumpAndGravity();
+			WallPush();
 			GroundedCheck();
 			Move();
-
 			
+
+
 		}
 
 		private void LateUpdate()
@@ -221,7 +233,7 @@ namespace StarterAssets
 			Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
 			// move the player
-			_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+			_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(_xVelocity, _verticalVelocity, _zVelocity) * Time.deltaTime);
 
 			// update animator if using character
 			if (_hasAnimator)
@@ -248,11 +260,13 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDCrawlReady, true);
 						_controller.height = 0.9f;
+						_controller.center = new Vector3(0f, 0.38f, 0f);
 					}
 					else
 					{
 						_animator.SetBool(_animIDCrawlReady, false);
 						_controller.height = 1.8f;
+						_controller.center = new Vector3(0f, 0.93f, 0f);
 					}
 				}
 
@@ -274,6 +288,7 @@ namespace StarterAssets
 						_animator.SetBool(_animIDJump, true);
 						_animator.SetBool(_animIDCrawlReady, false);
 						_controller.height = 1.8f;
+						_controller.center = new Vector3(0f, 0.93f, 0f);
 					}
 				}
 
@@ -301,7 +316,7 @@ namespace StarterAssets
 						_animator.SetBool(_animIDFreeFall, true);
 						_animator.SetBool(_animIDCrawlReady, false);
 						_controller.height = 1.8f;
-
+						_controller.center = new Vector3(0f, 0.93f, 0f);
 					}
 				}
 
@@ -313,6 +328,25 @@ namespace StarterAssets
 			if (_verticalVelocity < _terminalVelocity)
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
+			}
+		}
+
+		private void WallPush()
+		{
+			if (_flag)
+			{
+				_xVelocity = 5.0f;
+				_zVelocity = 5.0f;
+
+				_flag = false;
+			}
+			else
+			{
+				if (_xVelocity < 0.0f || _zVelocity < 0.0f)
+				{
+					_xVelocity = -2f;
+					_zVelocity = -2f;
+				}
 			}
 		}
 
@@ -333,6 +367,27 @@ namespace StarterAssets
 			
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+		}
+		
+		private void OnControllerColliderHit(ControllerColliderHit hit)
+		{
+			if (_wallPush) PushRigidBodies(hit);
+		}
+
+		private void PushRigidBodies(ControllerColliderHit hit)
+		{
+			Rigidbody body = hit.collider.attachedRigidbody;
+			if (body == null || body.isKinematic) return;
+        
+			var bodyLayerMask = 1 << body.gameObject.layer;
+			if ((bodyLayerMask & _pushLayers.value) == 0) return;
+
+			_pushDir = new Vector3(-hit.moveDirection.x, 0.0f, -hit.moveDirection.z); // reversed polarity because I want to repel the character controller
+
+
+			Debug.Log("x: " + _pushDir.x + " y: " + _pushDir.y + " z: " + _pushDir.z);
+
+			_flag = true;
 		}
 	}
 }
