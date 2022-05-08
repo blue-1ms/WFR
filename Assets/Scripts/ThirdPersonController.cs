@@ -400,9 +400,6 @@ namespace StarterAssets
 
 			_pushDir = new Vector3(hit.moveDirection.x, 0.0f, hit.moveDirection.z); // reversed polarity because I want to repel the character controller
 
-
-			Debug.Log("x: " + _pushDir.x + " y: " + _pushDir.y + " z: " + _pushDir.z);
-
 			_flag = true;
 		}
 	}
