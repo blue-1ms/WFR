@@ -13,6 +13,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool crawl;
+		public bool wallPush;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -51,6 +52,11 @@ namespace StarterAssets
 		{
 			CrawlInput(value.isPressed);
 		}
+		
+		public void OnWallPush(InputValue value)
+		{
+			WallPushInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -79,6 +85,11 @@ namespace StarterAssets
 		public void CrawlInput(bool newCrawlState)
 		{
 			crawl = newCrawlState;
+		}
+		
+		public void WallPushInput(bool newWallPushState)
+		{
+			wallPush = newWallPushState;
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID

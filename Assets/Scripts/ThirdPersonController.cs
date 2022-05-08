@@ -37,6 +37,9 @@ namespace StarterAssets
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
 
+		[Tooltip("Time required to pass before being able to wall push again. Set to 0f to instantly wall push again")]
+		public float WallTimeout = 0.01f;
+
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		public bool Grounded = true;
@@ -83,6 +86,7 @@ namespace StarterAssets
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
+		private float _wallTimeoutDelta;
 		private float _fallTimeoutDelta;
 
 		// animation IDs
@@ -122,6 +126,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+			_wallTimeoutDelta = WallTimeout;
 		}
 
 		private void Update()
@@ -333,19 +338,30 @@ namespace StarterAssets
 
 		private void WallPush()
 		{
-			if (_flag)
+			if (_flag && _input.wallPush) // True flag means rigidbody was activated
 			{
-				_xVelocity = 5.0f;
-				_zVelocity = 5.0f;
+					_wallTimeoutDelta = WallTimeout;
+					
+					_xVelocity = -3.0f;
+					_zVelocity = -3.0f;
+					
+					_flag = false;
 
+			}
+			else if (!_flag && _input.wallPush)
+			{
 				_flag = false;
 			}
 			else
 			{
-				if (_xVelocity < 0.0f || _zVelocity < 0.0f)
+				if (_wallTimeoutDelta > 0.0f)
 				{
-					_xVelocity = -2f;
-					_zVelocity = -2f;
+					_wallTimeoutDelta -= Time.deltaTime;
+				}
+				else if (_wallTimeoutDelta <= 0.0f)
+				{
+					_xVelocity = 0.0f;
+					_zVelocity = 0.0f;
 				}
 			}
 		}
@@ -382,7 +398,7 @@ namespace StarterAssets
 			var bodyLayerMask = 1 << body.gameObject.layer;
 			if ((bodyLayerMask & _pushLayers.value) == 0) return;
 
-			_pushDir = new Vector3(-hit.moveDirection.x, 0.0f, -hit.moveDirection.z); // reversed polarity because I want to repel the character controller
+			_pushDir = new Vector3(hit.moveDirection.x, 0.0f, hit.moveDirection.z); // reversed polarity because I want to repel the character controller
 
 
 			Debug.Log("x: " + _pushDir.x + " y: " + _pushDir.y + " z: " + _pushDir.z);
