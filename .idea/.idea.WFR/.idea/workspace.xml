@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="502e26d7-0c4a-4100-81ad-a591187de067" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/PatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/PatScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="502e26d7-0c4a-4100-81ad-a591187de067" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +64,7 @@
       <workItem from="1651567908407" duration="1443000" />
       <workItem from="1651655102662" duration="13725000" />
       <workItem from="1651992268097" duration="5597000" />
-      <workItem from="1651998913220" duration="3018000" />
+      <workItem from="1651998913220" duration="3616000" />
     </task>
     <servers />
   </component>
