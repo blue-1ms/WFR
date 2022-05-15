@@ -498,6 +498,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 1533120794637798131, guid: 73931d7955d6343418e20c77b61cd9c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1889272737}
+    - target: {fileID: 1533120794637798131, guid: 73931d7955d6343418e20c77b61cd9c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevelFour
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533120794637798131, guid: 73931d7955d6343418e20c77b61cd9c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73931d7955d6343418e20c77b61cd9c7, type: 3}
 --- !u!1 &1889272735
@@ -545,6 +557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IntroText: {fileID: 0}
+  CountUp: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!114 &1889272738
 MonoBehaviour:
   m_ObjectHideFlags: 0

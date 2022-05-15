@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Zhong/Assets/zhonggen/zhonggen.unity
     guid: 3760699279b1ad84b82c6df9b8d183a7
+  - enabled: 1
+    path: Assets/John Final Map/John.unity
+    guid: 7b533dfe561bc47c8975c955fe4ef3d3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

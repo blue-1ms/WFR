@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="502e26d7-0c4a-4100-81ad-a591187de067" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WFR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WFR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oscar/_SNAPS_PrototypingAssets/Dungeon Oscar/Scenes/Dungeon_Oscar_Final.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oscar/_SNAPS_PrototypingAssets/Dungeon Oscar/Scenes/Dungeon_Oscar_Final.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerArmature.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/PatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/PatScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pat_Scenes/StartScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Wood_Wicker_004_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Wood_Wicker_004_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Wood_Wicker_004_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Wood_Wicker_004_normal.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Zhong/Assets/zhonggen/zhonggen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zhong/Assets/zhonggen/zhonggen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WallPush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollisionDetect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Next.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="27KejG1mIT9mQJLoQMPNJRf6ijr" />
   <component name="ProjectViewState">
@@ -81,6 +82,8 @@
       <workItem from="1652179383527" duration="8022000" />
       <workItem from="1652596502051" duration="866000" />
       <workItem from="1652598427391" duration="5824000" />
+      <workItem from="1652618880152" duration="875000" />
+      <workItem from="1652619874533" duration="2068000" />
     </task>
     <servers />
   </component>

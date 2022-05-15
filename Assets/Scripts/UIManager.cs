@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI CountUp;
     private bool countFlag = false;
     public GameObject canvas;
+    private int seconds = 0;
 
     private float timer = 0.0f;
     void Awake()
@@ -51,11 +52,17 @@ public class UIManager : MonoBehaviour
 
             if (countFlag)
             {
-                int seconds = (int) (timer - 21f);
+                seconds = (int) (timer - 21f);
                 CountUp.text =  seconds.ToString();
             }
         }
         
+    }
+
+    public void LoadStart()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     public void LoadLevelOne()
@@ -104,4 +111,5 @@ public class UIManager : MonoBehaviour
             Cursor.visible = false;
         }
     }
+
 }

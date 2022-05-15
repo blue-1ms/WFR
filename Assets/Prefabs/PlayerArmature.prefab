@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 2171417202137828250}
   - component: {fileID: 8269175337668239713}
   - component: {fileID: 2489421164708878317}
+  - component: {fileID: 7224570099133254708}
   - component: {fileID: 2171417202137828253}
   m_Layer: 8
   m_Name: PlayerArmature
@@ -581,13 +582,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'Right_ThumbIntermediate'\n\tTransform 'Left_IndexProximal'\n\tTransform
-    'Right_IndexProximal'\n\tTransform 'Right_MiddleIntermediate'\n\tTransform 'Left_LowerArm'\n\tTransform
-    'Left_PinkyDistal'\n\tTransform 'Left_RingIntermediate'\n\tTransform 'Chest'\n\tTransform
-    'Right_ThumbDistal'\n\tTransform 'Right_IndexIntermediate'\n\tand more ...\n\tFrom
-    animation clip 'mixamo.com'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -629,6 +624,7 @@ MonoBehaviour:
   Gravity: -15
   JumpTimeout: 0.3
   FallTimeout: 0.15
+  WallTimeout: 0.01
   Grounded: 1
   GroundedOffset: -0.14
   GroundedRadius: 0.28
@@ -640,6 +636,10 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  _wallPush: 0
+  _pushLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &8269175337668239713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,9 +674,22 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   crawl: 0
+  wallPush: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
+--- !u!114 &7224570099133254708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2171417202137828241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34087c2c9106c54f803f350f654c0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2171417202137828253
 MonoBehaviour:
   m_ObjectHideFlags: 0
