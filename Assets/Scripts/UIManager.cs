@@ -9,6 +9,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI IntroText;
+    public TextMeshProUGUI CountUp;
+    private bool countFlag = false;
+    public GameObject canvas;
 
     private float timer = 0.0f;
     void Awake()
@@ -43,6 +46,13 @@ public class UIManager : MonoBehaviour
             {
                 IntroText.text = "";
                 Destroy(GameObject.Find("IntroBlock1"));
+                countFlag = true;
+            }
+
+            if (countFlag)
+            {
+                int seconds = (int) (timer - 21f);
+                CountUp.text =  seconds.ToString();
             }
         }
         
@@ -66,6 +76,12 @@ public class UIManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
+    public void LoadLevelFour()
+    {
+        SceneManager.LoadScene(4, LoadSceneMode.Single);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
     public void LoadMenu()
     {
         //UnityEditor.EditorApplication.isPlaying = false;
@@ -79,10 +95,11 @@ public class UIManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Cursor.visible = false;
-            IntroText = FindObjectOfType<TextMeshProUGUI>();
-            IntroText.text = "Helloooooo";
+            canvas = GameObject.Find("Canvas");
+            IntroText = canvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+            CountUp = canvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3)
+        else if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 4)
         {
             Cursor.visible = false;
         }
