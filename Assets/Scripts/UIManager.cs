@@ -54,6 +54,18 @@ public class UIManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
     public void LoadMenu()
     {
         //UnityEditor.EditorApplication.isPlaying = false;
@@ -69,6 +81,10 @@ public class UIManager : MonoBehaviour
             Cursor.visible = false;
             IntroText = FindObjectOfType<TextMeshProUGUI>();
             IntroText.text = "Helloooooo";
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            Cursor.visible = false;
         }
     }
 }
